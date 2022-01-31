@@ -1,0 +1,252 @@
+.header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 5px;
+}
+
+.scoreboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.game {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 0;
+
+  border: 2px solid black;
+}
+
+.visitor {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.home {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15%;
+  padding: 10px;
+}
+
+.logo {
+  max-height: 100%;
+  max-width: 80px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.no-games {
+  width: 100%;
+  text-align: center;
+}
+
+/* Team Colors */
+
+/* Alanta */
+.Hawks {
+  background-color: rgb(225, 68, 52);
+}
+
+/* Boston */
+.Celtics {
+  background-color: rgb(0, 122, 51);
+}
+
+/* Brooklyn */
+.Nets {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Charlotte */
+.Hornets {
+  background-color: rgb(0, 120, 140);
+}
+
+/* Chicago */
+.Bulls {
+  background-color: rgb(206, 17, 65);
+}
+
+/* Cleveland */
+.Cavaliers {
+  background-color: rgb(134, 0, 56);
+}
+
+/* Dallas */
+.Mavericks {
+  background-color: rgb(0, 83, 188);
+}
+
+/* Denver */
+.Nuggets {
+  background-color: rgb(255, 198, 39);
+}
+
+/* Detroit */
+.Pistons {
+  background-color: rgb(200, 16, 46);
+}
+
+/* Golden State */
+.Warriors {
+  background-color: rgb(255, 199, 44);
+}
+
+/* Houston */
+.Rockets {
+  background-color: rgb(206, 17, 65);
+}
+
+/* Indiana */
+.Pacers {
+  background-color: rgb(253, 187, 48);
+}
+
+/* Los Angeles Clippers */
+.Clippers {
+  background-color: rgb(29, 66, 148);
+}
+
+/* Los Angeles Lakers */
+.Lakers {
+  background-color: rgb(85, 37, 130);
+}
+
+/* Memphis */
+.Grizzlies {
+  background-color: rgb(93, 118, 169);
+}
+
+/* Miami */
+.Heat {
+  background-color: rgb(152, 0, 46);
+}
+
+/* Milwaukee */
+.Bucks {
+  background-color: rgb(0, 71, 27);
+}
+
+/* Minnesota */
+.Timberwolves {
+  background-color: rgb(35, 97, 146);
+}
+
+/* New Orleans */
+.Pelicans {
+  background-color: rgb(225, 58, 62);
+}
+
+/* New York */
+.Knicks {
+  background-color: rgb(245, 132, 38);
+}
+
+/* Oklahoma City */
+.Thunder {
+  background-color: rgb(0, 125, 195);
+}
+
+/* Orlando */
+.Magic {
+  background-color: rgb(0, 125, 197);
+}
+
+/* Philadelphia */
+.Seventy-sixers {
+  background-color: rgb(0, 107, 182);
+}
+
+/* Phoenix */
+.Suns {
+  background-color: rgb(229, 95, 32);
+}
+
+/* Portland */
+.Trail {
+  background-color: rgb(224, 58, 62);
+}
+
+/* Sacramento */
+.Kings {
+  background-color: rgb(91, 43, 130);
+}
+
+/* San Antonio */
+.Spurs {
+  background-color: rgb(196, 206, 211);
+}
+
+/* Toronto */
+.Raptors {
+  background-color: rgb(206, 17, 65);
+}
+
+/* Utah */
+.Jazz {
+  background-color: rgb(0, 43, 92);
+}
+
+/* Washington */
+.Wizards {
+  background-color: rgb(0, 43, 92);
+}
+
+@media only screen and (max-width: 600px) {
+  .game {
+    width: 350px;
+  }
+  .team {
+    font-size: 1rem;
+  }
+
+  .score {
+    width: 150px;
+    font-size: 0.75rem;
+  }
+}
