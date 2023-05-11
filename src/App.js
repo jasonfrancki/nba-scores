@@ -70,51 +70,54 @@ function App() {
         {games.length === 0 ? (
           <h1 className="no-games"> </h1>
         ) : (
-          games.map((game) => (
-            <div className="game" key={game.id}>
-              <div
-                className={`team visitor ${
-                  game.visitor_team.name === '76ers'
-                    ? 'Seventy-sixers'
-                    : game.visitor_team.name
-                }`}
-              >
-                <div className="image">
-                  <img
-                    className="logo"
-                    src={`/${game.visitor_team.name}.png`}
-                    alt=""
-                  />
-                </div>
-                <h4>{game.visitor_team.name}</h4>
-              </div>
-              <div className="score">
-                <h4 className="game-status">{game.status}</h4>
-                {game.visitor_team_score !== 0 && game.home_team_score !== 0 && (
-                  <div className="scores">
-                    <h2>{game.visitor_team_score}</h2>
-                    <h2>{game.home_team_score}</h2>
+          games.map((game) => {
+            return (
+              <div className="game" key={game.id}>
+                <div
+                  className={`team visitor ${
+                    game.visitor_team.name === '76ers'
+                      ? 'Seventy-sixers'
+                      : game.visitor_team.name
+                  }`}
+                >
+                  <div className="image">
+                    <img
+                      className="logo"
+                      src={`/${game.visitor_team.name}.png`}
+                      alt=""
+                    />
                   </div>
-                )}
-              </div>
-              <div
-                className={`team home ${
-                  game.home_team.name === '76ers'
-                    ? 'Seventy-sixers'
-                    : game.home_team.name
-                }`}
-              >
-                <div className="image">
-                  <img
-                    className="logo"
-                    src={`/${game.home_team.name}.png`}
-                    alt=""
-                  />
+                  <h4>{game.visitor_team.name}</h4>
                 </div>
-                <h4>{game.home_team.name}</h4>
+                <div className="score">
+                  <h4 className="game-status">{game.status.slice(0, 10)}</h4>
+                  {game.visitor_team_score !== 0 &&
+                    game.home_team_score !== 0 && (
+                      <div className="scores">
+                        <h2>{game.visitor_team_score}</h2>
+                        <h2>{game.home_team_score}</h2>
+                      </div>
+                    )}
+                </div>
+                <div
+                  className={`team home ${
+                    game.home_team.name === '76ers'
+                      ? 'Seventy-sixers'
+                      : game.home_team.name
+                  }`}
+                >
+                  <div className="image">
+                    <img
+                      className="logo"
+                      src={`/${game.home_team.name}.png`}
+                      alt=""
+                    />
+                  </div>
+                  <h4>{game.home_team.name}</h4>
+                </div>
               </div>
-            </div>
-          ))
+            )
+          })
         )}
       </div>
     </div>
